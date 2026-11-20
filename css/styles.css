@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --main-blue: #0d6efd;
+  --light-bg: #f8f9fa;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--light-bg);
+}
+
+h1, h2, .navbar-brand {
+  font-family: 'Oswald', sans-serif;
+}
+
+header h1 {
+  font-size: 2.8rem;
+}
+
+.intro-text {
+  font-size: 1.15rem;
+}
+
+.date-box {
+  width: 13rem;
+  background-color: var(--main-blue);
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--main-blue);
+  border-color: var(--main-blue);
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.card {
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: #000000 !important;
+}

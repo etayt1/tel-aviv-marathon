@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tel Aviv Marathon</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tel Aviv Marathon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#races">Races</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#location">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.tlvmarathon.co.il/" target="_blank">Official Site</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">
+              Register
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 bg-white border-bottom">
+    <div class="container">
+      <p class="date-box text-center py-1 rounded mb-3">February 2027 - Tel Aviv</p>
+      <h1 class="mb-3">Run in Tel Aviv</h1>
+      <p class="lead intro-text mb-4">
+        Welcome to the official page for the Tel Aviv Marathon. Choose your distance and join thousands of runners next to the Mediterranean Sea.
+      </p>
+      <a href="#races" class="btn btn-primary">See Races</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="races" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Race Categories</h2>
+        <div id="races-list" class="row g-4"></div>
+      </div>
+    </section>
+
+    <section id="schedule" class="py-5 bg-white border-top border-bottom">
+      <div class="container">
+        <h2 class="mb-4">Event Schedule</h2>
+
+        <div class="row border-bottom py-3 align-items-center">
+          <div class="col-12 col-md-2 fw-bold text-primary">05:30 AM</div>
+          <div class="col-12 col-md-7">
+            <h5>Full Marathon (42.2 KM)</h5>
+            <p class="mb-0 text-muted">Start from Rokach Boulevard through the city center.</p>
+          </div>
+          <div class="col-12 col-md-3 d-flex justify-content-md-end">
+            <span class="badge bg-primary">Gate A</span>
+          </div>
+        </div>
+
+        <div class="row border-bottom py-3 align-items-center">
+          <div class="col-12 col-md-2 fw-bold text-primary">06:45 AM</div>
+          <div class="col-12 col-md-7">
+            <h5>Half Marathon (21.1 KM)</h5>
+            <p class="mb-0 text-muted">Start along the coast and Herbert Samuel promenade.</p>
+          </div>
+          <div class="col-12 col-md-3 d-flex justify-content-md-end">
+            <span class="badge bg-primary">Gate B</span>
+          </div>
+        </div>
+
+        <div class="row py-3 align-items-center">
+          <div class="col-12 col-md-2 fw-bold text-primary">08:30 AM</div>
+          <div class="col-12 col-md-7">
+            <h5>10K City Run</h5>
+            <p class="mb-0 text-muted">Start at Rokach Boulevard and finish at Yarkon Park.</p>
+          </div>
+          <div class="col-12 col-md-3 d-flex justify-content-md-end">
+            <span class="badge bg-primary">Gate C</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="py-5">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="img/Maraton_Tel_Aviv_-_Beach_View.JPG" alt="Tel Aviv Marathon Beach View" class="img-fluid rounded border">
+          </div>
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+            <h2 class="mb-3">Starting Point: Ganei Yehoshua</h2>
+            <p>
+              All races start and end at Rokach Boulevard next to Yarkon Park. You can easily arrive by train to Tel Aviv University station.
+            </p>
+            <p class="mb-0 fw-bold">
+              <i class="bi bi-geo-alt-fill text-primary"></i> Rokach Blvd, Tel Aviv
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0">Tel Aviv Marathon 2027 - Web Design Project</p>
+      <div>
+        <a href="https://www.instagram.com/" target="_blank" class="text-white text-decoration-none me-3">
+          <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="text-white text-decoration-none">
+          <i class="bi bi-facebook"></i> Facebook
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="registerModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Race Registration</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="your-access-key">
+
+            <div class="mb-3">
+              <label for="userName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="userName" name="name" placeholder="Your name" required>
+              <div class="invalid-feedback">Enter your name.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="userEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="userEmail" name="email" placeholder="name@email.com" required>
+              <div class="invalid-feedback">Enter a valid email.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="raceChoice" class="form-label">Distance</label>
+              <select class="form-select" id="raceChoice" name="race" required>
+                <option value="" selected disabled>Select a race</option>
+                <option value="42k">Full Marathon (42.2 KM)</option>
+                <option value="21k">Half Marathon (21.1 KM)</option>
+                <option value="10k">10K Run</option>
+              </select>
+              <div class="invalid-feedback">Select a distance.</div>
+            </div>
+
+            <div class="modal-footer px-0 pb-0">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/code.js"></script>
+</body>
+</html>

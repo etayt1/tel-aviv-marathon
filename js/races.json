@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Full Marathon",
+    "distance": "42.2 KM",
+    "description": "The flagship race through the heart of Tel Aviv, passing Rothschild Boulevard, Rabin Square, and the Mediterranean coastline.",
+    "image": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "title": "Half Marathon",
+    "distance": "21.1 KM",
+    "description": "A fast, flat, and energetic coastal route designed for runners chasing a new personal best along the promenade.",
+    "image": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "title": "10K City Run",
+    "distance": "10 KM",
+    "description": "An accessible urban run starting at Rokach Boulevard, blending live street music, sea breeze, and festival atmosphere.",
+    "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=800&auto=format&fit=crop"
+  }
+]
